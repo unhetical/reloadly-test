@@ -1,0 +1,8 @@
+<div *ngIf="!(loading$ | async)" class="p-5">
+  <app-ui-search></app-ui-search>
+  <app-ui-block-item></app-ui-block-item>
+</div>
+
+<div class="d-flex align-items-center justify-content-center" style="min-height: 48vw">
+  <p-progressSpinner *ngIf="loading$ | async"></p-progressSpinner>
+</div>

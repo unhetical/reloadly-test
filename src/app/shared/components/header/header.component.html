@@ -1,0 +1,18 @@
+<div class="header">
+  <div class="header__section">
+    <ul class="header__list">
+      <li [routerLink]="['/']" class="header__logo">Where in the world?</li>
+    </ul>
+  </div>
+  <div class="header__section">
+    <ul class="header__list">
+      <li (click)="switchTheme()">
+        <i
+          class="pi align-middle"
+          [ngClass]="!isDark ? 'pi-moon' : 'pi-circle-off'"
+        ></i>
+        {{ isDark ? "Light mode" : "Dark mode" }}
+      </li>
+    </ul>
+  </div>
+</div>
